@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  Space
+//
+//  Created by Admin on 11/8/14.
+//  Copyright (c) 2014 DyvenSvit. All rights reserved.
+//
+
+#ifndef Space_PrefixHeader_pch
+#define Space_PrefixHeader_pch
+
+#import <CoreLocation/CoreLocation.h>
+
+#endif

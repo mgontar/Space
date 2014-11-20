@@ -1,0 +1,9 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'RestKit', '~> 0.23'
+pod 'Facebook-iOS-SDK', '~> 3.20'
+pod 'FCCurrentLocationGeocoder', '~> 1.1'
+pod 'INTULocationManager', '~> 1.2'

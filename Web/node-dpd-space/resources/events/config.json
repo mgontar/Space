@@ -1,0 +1,101 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"dateBegin": {
+			"name": "dateBegin",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "dateBegin",
+			"order": 1
+		},
+		"dateEnd": {
+			"name": "dateEnd",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "dateEnd",
+			"order": 2
+		},
+		"about": {
+			"name": "about",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "about",
+			"order": 3
+		},
+		"phone": {
+			"name": "phone",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "phone",
+			"order": 4
+		},
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "email",
+			"order": 5
+		},
+		"organizators": {
+			"name": "organizators",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "organizators",
+			"order": 6
+		},
+		"places": {
+			"name": "places",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "places",
+			"order": 7
+		},
+		"urlWebPages": {
+			"name": "urlWebPages",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "urlWebPages",
+			"order": 8
+		},
+		"urlPhotos": {
+			"name": "urlPhotos",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "urlPhotos",
+			"order": 9
+		},
+		"categories": {
+			"name": "categories",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "categories",
+			"order": 10
+		},
+		"tags": {
+			"name": "tags",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "tags",
+			"order": 11
+		}
+	}
+}

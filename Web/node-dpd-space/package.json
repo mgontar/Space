@@ -1,0 +1,11 @@
+{
+  "name": "ds-space",
+  "description": "DyvenSvit Space: events, places, people",
+  "version": "0.0.1",
+  "author": "Maksym Gontar <max.gontar@google.com>",
+  "private" : "true", 
+  "dependencies" : { 
+    "deployd" : "*.*.*", 
+    "dpd-fileupload" : "*.*.*" 
+  }
+}
