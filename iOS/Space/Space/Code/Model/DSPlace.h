@@ -10,7 +10,9 @@
 
 @interface DSPlace : NSObject
 
-@property (strong, atomic) NSString *name;
+@property (strong, atomic) NSString *placeID;
+
+@property (strong, atomic) NSString *title;
 
 @property (strong, atomic) NSString *address;
 

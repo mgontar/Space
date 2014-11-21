@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DSPeople.h"
-#import "DSPlace.h"
 
 @interface DSEvent : NSObject
 
 @property (strong, atomic) NSString *eventID;
 
-@property (strong, atomic) NSString *name;
+@property (strong, atomic) NSString *title;
 
 @property (strong, atomic) NSString *about;
 
@@ -22,9 +20,9 @@
 
 @property (strong, atomic) NSDate *dateEnd;
 
-@property (strong, atomic) DSPlace *place;
+@property (strong, atomic) NSArray *places;
 
-@property (strong, atomic) DSPeople *organizer;
+@property (strong, atomic) NSArray *orgs;
 
 @property (strong, atomic) NSString *website;
 

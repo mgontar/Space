@@ -28,30 +28,6 @@ static NSString * const reuseIdentifier = @"Cell";
     // Do any additional setup after loading the view.
 }
 
-- (void)configureRestKit
-{
-    // initialize AFNetworking HTTPClient
-    NSURL *baseURL = [NSURL URLWithString:@"https://graph.facebook.com"];
-    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
-    
-    // initialize RestKit
-    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
-    
-    // setup object mappings
-    RKObjectMapping *eventMapping = [RKObjectMapping mappingForClass:[DSEvent class]];
-    [eventMapping addAttributeMappingsFromDictionary:@{@"name": @"name", @"start_time": @"startTime", @"id": @"eventID", @"location": @"location"}];
-    
-    // register mappings with the provider using a response descriptor
-    RKResponseDescriptor *responseDescriptor =
-    [RKResponseDescriptor responseDescriptorWithMapping:eventMapping
-                                                 method:RKRequestMethodGET
-                                            pathPattern:@"/v2.2/:group-id/events"
-                                                keyPath:@"data"
-                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
-    
-    [objectManager addResponseDescriptor:responseDescriptor];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -1,1 +1,0 @@
-PODS_FCCURRENTLOCATIONGEOCODER_OTHER_LDFLAGS = -framework "CoreLocation" -framework "Foundation" -framework "UIKit"

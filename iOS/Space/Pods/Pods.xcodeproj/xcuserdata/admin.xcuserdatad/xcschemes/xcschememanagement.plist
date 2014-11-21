@@ -4,57 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Bolts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-FCCurrentLocationGeocoder.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-FCIPAddressGeocoder.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
+		<key>Pods-EasyMapping.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-INTULocationManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ISO8601DateFormatterValueTransformer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RKValueTransformers.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RestKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SOCKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-TransitionKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,62 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03DB9B96EEECD1B7AF9E0A6D</key>
+		<key>7108A0A37615622E059CFA63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A97E4F51A2A29C338A4086F</key>
+		<key>83469D8BEDE4F6FA2ECFE112</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34F988E901119CD90D1697AA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3BF970FCD062149D413A124A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7EB89B63CA97BAF14EC0F232</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>896074B7EDE77D550B2B04DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8BE381B0B305B29ECA573E3A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>92A4D8FED2BF1F46858A9B66</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AECDB0BCB1B4489EB6B55451</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B37268DBE4DB3B1C556DAAEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DBCFD87032AA92624AD209A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA729D106193FA1F1A9CCE9C</key>
+		<key>C2EA9A74D89922806AB4F45C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

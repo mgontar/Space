@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RestKit/RestKit.h>
-#import "DSEvent.h"
 
 @interface DSEventsCollectionViewController : UICollectionViewController
 

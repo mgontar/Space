@@ -9,6 +9,8 @@
 #ifndef Space_PrefixHeader_pch
 #define Space_PrefixHeader_pch
 
+#ifdef __OBJC__
 #import <CoreLocation/CoreLocation.h>
+#endif
 
 #endif

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		66D9633F6DD9914CEE0C2E3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E40194399B84F43A11E4412C /* libPods.a */; };
 		84A5B4F21A0E9D9B00563171 /* DSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B4F11A0E9D9B00563171 /* DSEvent.m */; };
-		84A5B4F81A0E9E0100563171 /* DSPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B4F71A0E9E0100563171 /* DSPeople.m */; };
+		84A5B4F81A0E9E0100563171 /* DSOrg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B4F71A0E9E0100563171 /* DSOrg.m */; };
 		84A5B4FB1A0E9E0C00563171 /* DSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B4FA1A0E9E0C00563171 /* DSTabBarController.m */; };
 		84A5B4FE1A0E9E1700563171 /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B4FD1A0E9E1700563171 /* DSAppDelegate.m */; };
 		84A5B5011A0E9E3500563171 /* DSPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B5001A0E9E3500563171 /* DSPlace.m */; };
@@ -28,6 +28,9 @@
 		84EFF9B51A0CAEE3007945FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFF9B41A0CAEE3007945FA /* Images.xcassets */; };
 		84EFF9B81A0CAEE3007945FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EFF9B61A0CAEE3007945FA /* LaunchScreen.xib */; };
 		84EFF9C41A0CAEE3007945FA /* SpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFF9C31A0CAEE3007945FA /* SpaceTests.m */; };
+		84FE6E441A1F957300D3874E /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE6E431A1F957300D3874E /* MappingProvider.m */; };
+		84FE6E481A1F9DFC00D3874E /* llstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FE6E461A1F9DFC00D3874E /* llstr.cpp */; };
+		84FE6E4B1A1F9EB000D3874E /* GeoCoordinatesParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84FE6E4A1A1F9EB000D3874E /* GeoCoordinatesParser.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +46,8 @@
 /* Begin PBXFileReference section */
 		84A5B4F01A0E9D9B00563171 /* DSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSEvent.h; path = Code/Model/DSEvent.h; sourceTree = "<group>"; };
 		84A5B4F11A0E9D9B00563171 /* DSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSEvent.m; path = Code/Model/DSEvent.m; sourceTree = "<group>"; };
-		84A5B4F61A0E9E0100563171 /* DSPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSPeople.h; path = Code/Model/DSPeople.h; sourceTree = "<group>"; };
-		84A5B4F71A0E9E0100563171 /* DSPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSPeople.m; path = Code/Model/DSPeople.m; sourceTree = "<group>"; };
+		84A5B4F61A0E9E0100563171 /* DSOrg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSOrg.h; path = Code/Model/DSOrg.h; sourceTree = "<group>"; };
+		84A5B4F71A0E9E0100563171 /* DSOrg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSOrg.m; path = Code/Model/DSOrg.m; sourceTree = "<group>"; };
 		84A5B4F91A0E9E0C00563171 /* DSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSTabBarController.h; path = Code/UI/DSTabBarController.h; sourceTree = "<group>"; };
 		84A5B4FA1A0E9E0C00563171 /* DSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSTabBarController.m; path = Code/UI/DSTabBarController.m; sourceTree = "<group>"; };
 		84A5B4FC1A0E9E1700563171 /* DSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSAppDelegate.h; path = Code/DSAppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +82,13 @@
 		84EFF9BD1A0CAEE3007945FA /* SpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFF9C21A0CAEE3007945FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EFF9C31A0CAEE3007945FA /* SpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceTests.m; sourceTree = "<group>"; };
+		84FE6E421A1F957300D3874E /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MappingProvider.h; path = Code/Data/Providers/MappingProvider.h; sourceTree = "<group>"; };
+		84FE6E431A1F957300D3874E /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MappingProvider.m; path = Code/Data/Providers/MappingProvider.m; sourceTree = "<group>"; };
+		84FE6E461A1F9DFC00D3874E /* llstr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llstr.cpp; sourceTree = "<group>"; };
+		84FE6E471A1F9DFC00D3874E /* llstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llstr.h; sourceTree = "<group>"; };
+		84FE6E491A1F9EB000D3874E /* GeoCoordinatesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoordinatesParser.h; sourceTree = "<group>"; };
+		84FE6E4A1A1F9EB000D3874E /* GeoCoordinatesParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeoCoordinatesParser.mm; sourceTree = "<group>"; };
+		84FE6E4C1A1FA8AF00D3874E /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		D1334480AE866B548F7ACB6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E40194399B84F43A11E4412C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A0D373431E333EFB321BC3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,8 +191,8 @@
 		84A5B4EF1A0E9C9A00563171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84A5B4F61A0E9E0100563171 /* DSPeople.h */,
-				84A5B4F71A0E9E0100563171 /* DSPeople.m */,
+				84A5B4F61A0E9E0100563171 /* DSOrg.h */,
+				84A5B4F71A0E9E0100563171 /* DSOrg.m */,
 				84A5B4F01A0E9D9B00563171 /* DSEvent.h */,
 				84A5B4F11A0E9D9B00563171 /* DSEvent.m */,
 				84A5B4FF1A0E9E3500563171 /* DSPlace.h */,
@@ -262,12 +272,44 @@
 		84EFF9CE1A0CAF09007945FA /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				84FE6E451A1F9DFC00D3874E /* Utils */,
+				84FE6E401A1F952200D3874E /* Data */,
 				84A5B4FC1A0E9E1700563171 /* DSAppDelegate.h */,
 				84A5B4FD1A0E9E1700563171 /* DSAppDelegate.m */,
 				84A5B4EF1A0E9C9A00563171 /* Model */,
 				84A5B4EE1A0E9C7A00563171 /* UI */,
 			);
 			name = Code;
+			sourceTree = "<group>";
+		};
+		84FE6E401A1F952200D3874E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84FE6E411A1F952E00D3874E /* Providers */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		84FE6E411A1F952E00D3874E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				84FE6E421A1F957300D3874E /* MappingProvider.h */,
+				84FE6E431A1F957300D3874E /* MappingProvider.m */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		84FE6E451A1F9DFC00D3874E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84FE6E4C1A1FA8AF00D3874E /* stdafx.h */,
+				84FE6E461A1F9DFC00D3874E /* llstr.cpp */,
+				84FE6E471A1F9DFC00D3874E /* llstr.h */,
+				84FE6E491A1F9EB000D3874E /* GeoCoordinatesParser.h */,
+				84FE6E4A1A1F9EB000D3874E /* GeoCoordinatesParser.mm */,
+			);
+			name = Utils;
+			path = Code/Utils;
 			sourceTree = "<group>";
 		};
 		D69DCC3E4B707002CC141D68 /* Frameworks */ = {
@@ -417,7 +459,9 @@
 				84EDB02A1A0F548D00333689 /* DSPeopleCollectionViewController.m in Sources */,
 				84A5B4F21A0E9D9B00563171 /* DSEvent.m in Sources */,
 				84EDB0301A0F54FE00333689 /* DSExplorePageViewController.m in Sources */,
-				84A5B4F81A0E9E0100563171 /* DSPeople.m in Sources */,
+				84FE6E481A1F9DFC00D3874E /* llstr.cpp in Sources */,
+				84FE6E441A1F957300D3874E /* MappingProvider.m in Sources */,
+				84A5B4F81A0E9E0100563171 /* DSOrg.m in Sources */,
 				84EFF9A71A0CAEE3007945FA /* main.m in Sources */,
 				84EDB02D1A0F54BC00333689 /* DSEventsCollectionViewController.m in Sources */,
 				84EDB0331A0F55EB00333689 /* DSPlaceCollectionViewCell.m in Sources */,
@@ -426,6 +470,7 @@
 				84A5B4FB1A0E9E0C00563171 /* DSTabBarController.m in Sources */,
 				84EDB0271A0F544800333689 /* DSPlacesCollectionViewController.m in Sources */,
 				84EFF9AD1A0CAEE3007945FA /* Space.xcdatamodeld in Sources */,
+				84FE6E4B1A1F9EB000D3874E /* GeoCoordinatesParser.mm in Sources */,
 				84A5B5011A0E9E3500563171 /* DSPlace.m in Sources */,
 				84EDB0361A0F564800333689 /* DSPeopleCollectionViewCell.m in Sources */,
 				84A5B4FE1A0E9E1700563171 /* DSAppDelegate.m in Sources */,

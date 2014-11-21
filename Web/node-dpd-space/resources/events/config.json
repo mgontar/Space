@@ -49,19 +49,19 @@
 			"id": "email",
 			"order": 5
 		},
-		"organizators": {
-			"name": "organizators",
+		"orgs": {
+			"name": "orgs",
 			"type": "array",
 			"typeLabel": "array",
-			"required": true,
-			"id": "organizators",
+			"required": false,
+			"id": "orgs",
 			"order": 6
 		},
 		"places": {
 			"name": "places",
 			"type": "array",
 			"typeLabel": "array",
-			"required": true,
+			"required": false,
 			"id": "places",
 			"order": 7
 		},

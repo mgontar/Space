@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface GeoCoordinatesParser : NSObject
-
++(CLLocation*)getLocationFromString:(NSString*)value;
++(NSString*)getStringFromLocation:(CLLocation*)value;
 @end
