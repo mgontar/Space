@@ -392,13 +392,13 @@ void CLongLatString::ConvertDoubleToString(std::string strF)
 						{
 							sForm[nL-1] = 'd';
 							if (cP == 'D')
-							{	_snprintf(sFloat, 127, sForm, GetIntegerDegree());	}
+							{	snprintf(sFloat, 127, sForm, GetIntegerDegree());	}
 							else if (cP == 'C')
-							{	_snprintf(sFloat, 127, sForm, (int)dCoord);	}
+							{	snprintf(sFloat, 127, sForm, (int)dCoord);	}
 							else if (cP == 'M')
-							{	_snprintf(sFloat, 127, sForm, GetIntegerMinute());	}
+							{	snprintf(sFloat, 127, sForm, GetIntegerMinute());	}
 							else if (cP == 'S')
-							{	_snprintf(sFloat, 127, sForm, GetIntegerSecond());	}
+							{	snprintf(sFloat, 127, sForm, GetIntegerSecond());	}
 							ostrmR << sFloat;
 						}
 					}
@@ -412,13 +412,13 @@ void CLongLatString::ConvertDoubleToString(std::string strF)
 						{
 							sForm[nL-1] = 'f';
 							if (cP == 'd')
-							{	_snprintf(sFloat, 127, sForm, fabs(dCoord));	}
+							{	snprintf(sFloat, 127, sForm, fabs(dCoord));	}
 							else if (cP == 'c')
-							{	_snprintf(sFloat, 127, sForm, dCoord);	}
+							{	snprintf(sFloat, 127, sForm, dCoord);	}
 							else if (cP == 'm')
-							{	_snprintf(sFloat, 127, sForm, GetDecimalMinute());	}
+							{	snprintf(sFloat, 127, sForm, GetDecimalMinute());	}
 							else if (cP == 's')
-							{	_snprintf(sFloat, 127, sForm, GetDecimalSecond());	}
+							{	snprintf(sFloat, 127, sForm, GetDecimalSecond());	}
 							ostrmR << sFloat;
 						}
 					}

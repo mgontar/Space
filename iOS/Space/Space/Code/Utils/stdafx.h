@@ -5,10 +5,7 @@
 
 #pragma once
 
-#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
 #include <stdio.h>
-#include <tchar.h>
-#include <atlstr.h>
 
 
 struct periods
@@ -27,17 +24,17 @@ struct StructWord
 class DictWord
 {
 public:
-	DictWord(short n, CString DictChar);
+	DictWord(short n, char* DictChar);
 	~DictWord();
 	int Add();
-	CString GetString(bool Heading);
+	char* GetString(bool Heading);
 private:
 	StructWord SWord;
 	StructWord *Current;
 	StructWord *Head;
 	StructWord *Tale;
 
-	CString CharBase;
+	char* CharBase;
 	int CharBaseLength;
 	bool PureAdd;
 };
@@ -52,7 +49,7 @@ public:
 private:
 	FILE* DictFile;
 	char BaseDict[255];
-	CString Dict;
+	char* Dict;
 };
 
 
