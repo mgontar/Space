@@ -32,10 +32,12 @@
 
 @property (strong, atomic) NSArray *categories;
 
-@property (strong, atomic) NSString *tags;
+@property (strong, atomic) NSArray *tags;
 
 @property (atomic) NSInteger ticketPriceMin;
 
 @property (atomic) NSInteger ticketPriceMax;
+
+@property (atomic) BOOL favorite;
 
 @end

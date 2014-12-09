@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4s0-0t-TFT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -243,25 +244,25 @@
                                                     <exclude reference="iRn-aI-zbi"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="BEQ-Py-9Ry"/>
-                                                    <exclude reference="TjF-QW-seC"/>
-                                                    <exclude reference="xQH-Yc-8gX"/>
                                                     <exclude reference="1hm-TK-1Ew"/>
                                                     <exclude reference="x3v-mM-Onk"/>
                                                     <exclude reference="xhg-OE-QR2"/>
-                                                    <exclude reference="P8c-pn-kWU"/>
-                                                    <exclude reference="cuC-XJ-y19"/>
-                                                    <exclude reference="m0i-yH-k1D"/>
-                                                    <exclude reference="vfK-b6-gWu"/>
                                                     <exclude reference="6od-XC-O5p"/>
                                                     <exclude reference="KAs-sH-rLx"/>
                                                     <exclude reference="gCf-5Z-RiZ"/>
                                                     <exclude reference="mdv-Wi-Jek"/>
-                                                    <exclude reference="cCT-8j-IvJ"/>
+                                                    <exclude reference="P8c-pn-kWU"/>
+                                                    <exclude reference="cuC-XJ-y19"/>
+                                                    <exclude reference="m0i-yH-k1D"/>
+                                                    <exclude reference="vfK-b6-gWu"/>
                                                     <exclude reference="7Qh-Ga-IWD"/>
                                                     <exclude reference="ZMj-TX-ynN"/>
+                                                    <exclude reference="cCT-8j-IvJ"/>
                                                     <exclude reference="RMW-Wb-Lpm"/>
                                                     <exclude reference="Ubb-uo-uP5"/>
+                                                    <exclude reference="BEQ-Py-9Ry"/>
+                                                    <exclude reference="TjF-QW-seC"/>
+                                                    <exclude reference="xQH-Yc-8gX"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -275,25 +276,25 @@
                                                     <include reference="iRn-aI-zbi"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="BEQ-Py-9Ry"/>
-                                                    <include reference="TjF-QW-seC"/>
-                                                    <include reference="xQH-Yc-8gX"/>
                                                     <include reference="1hm-TK-1Ew"/>
                                                     <include reference="x3v-mM-Onk"/>
                                                     <include reference="xhg-OE-QR2"/>
-                                                    <include reference="P8c-pn-kWU"/>
-                                                    <include reference="cuC-XJ-y19"/>
-                                                    <include reference="m0i-yH-k1D"/>
-                                                    <include reference="vfK-b6-gWu"/>
                                                     <include reference="6od-XC-O5p"/>
                                                     <include reference="KAs-sH-rLx"/>
                                                     <include reference="gCf-5Z-RiZ"/>
                                                     <include reference="mdv-Wi-Jek"/>
-                                                    <include reference="cCT-8j-IvJ"/>
+                                                    <include reference="P8c-pn-kWU"/>
+                                                    <include reference="cuC-XJ-y19"/>
+                                                    <include reference="m0i-yH-k1D"/>
+                                                    <include reference="vfK-b6-gWu"/>
                                                     <include reference="7Qh-Ga-IWD"/>
                                                     <include reference="ZMj-TX-ynN"/>
+                                                    <include reference="cCT-8j-IvJ"/>
                                                     <include reference="RMW-Wb-Lpm"/>
                                                     <include reference="Ubb-uo-uP5"/>
+                                                    <include reference="BEQ-Py-9Ry"/>
+                                                    <include reference="TjF-QW-seC"/>
+                                                    <include reference="xQH-Yc-8gX"/>
                                                 </mask>
                                             </variation>
                                         </view>

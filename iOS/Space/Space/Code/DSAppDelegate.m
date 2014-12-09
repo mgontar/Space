@@ -16,7 +16,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSEntityDescription *entityDescriptionOrg = [NSEntityDescription entityForName:@"Org" inManagedObjectContext:self.managedObjectContext];
+    NSManagedObject *newOrg = [[NSManagedObject alloc] initWithEntity:entityDescriptionOrg insertIntoManagedObjectContext:self.managedObjectContext];
+    [newOrg setValue:[[NSUUID UUID] UUIDString] forKey:@"orgID"];
+    [newOrg setValue:@"DyvenSvit" forKey:@"title"];
+    
+    NSEntityDescription *entityDescriptionPlace = [NSEntityDescription entityForName:@"Place" inManagedObjectContext:self.managedObjectContext];
+    NSManagedObject *newPlace = [[NSManagedObject alloc] initWithEntity:entityDescriptionPlace insertIntoManagedObjectContext:self.managedObjectContext];
+    [newPlace setValue:[[NSUUID UUID] UUIDString] forKey:@"placeID"];
+    [newPlace setValue:@"Комісія у справах молоді УГКЦ" forKey:@"title"];
+    [newPlace setValue:@"м. Львів, вул. Озаркевича, 4 (третій поверх)" forKey:@"address"];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:49.838594 longitude:24.011108];
+    [newPlace setValue: location forKey:@"location"];
+    
+    
+    NSEntityDescription *entityDescriptionEvent = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSManagedObject *newEvent = [[NSManagedObject alloc] initWithEntity:entityDescriptionEvent insertIntoManagedObjectContext:self.managedObjectContext];
+    [newEvent setValue:[[NSUUID UUID] UUIDString] forKey:@"eventID"];
+    [newEvent setValue:@"DyvenSvit party" forKey:@"title"];
+    [newEvent setValue:@"DyvenSvit party" forKey:@"about"];
+    NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
+    mmddccyy.timeStyle = NSDateFormatterNoStyle;
+    mmddccyy.dateFormat = @"dd/MM/yyyy hh:mm";
+    NSDate *dateBegin = [mmddccyy dateFromString:@"31/12/2014 19:30"];
+    [newEvent setValue:dateBegin forKey:@"dateBegin"];
+    [newEvent setValue:[NSSet setWithObject:newOrg] forKey:@"orgs"];
+    [newEvent setValue:[NSSet setWithObject:newPlace] forKey:@"places"];
+    
+    NSError *error = nil;
+    if(![newOrg.managedObjectContext save:&error])
+    {
+        NSLog(@"Unable to save managed object context.");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    }
     return YES;
 }
 

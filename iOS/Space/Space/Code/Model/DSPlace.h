@@ -28,4 +28,6 @@
 
 @property (strong, atomic) NSArray *categories;
 
+@property (atomic) BOOL favorite;
+
 @end
